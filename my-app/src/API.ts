@@ -1,4 +1,15 @@
 
+export type question = {
+catagory: string;
+correct_answer: string;
+difficulty: string;
+incorect_answer: string[];
+question: string;
+type: string;
+};
+
+export type questionState = question & { answers: string[] };
+
 export enum Difficulty {
     EASY ="easy",
     MEDIUM ="medium",
