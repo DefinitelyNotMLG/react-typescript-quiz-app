@@ -1,4 +1,7 @@
 import React from "react";
+//types
+import { answerObject } from "../App"
+
 
 type Props = {
     question: any;
