@@ -60,8 +60,14 @@ const App = () => {
   }
 
   const nextQuestion = () => {
-    //move onto the next question
-    
+    //move onto the next question if not the last question
+    const nextQuestion = number + 1;
+    if (nextQuestion === Total_Questions) {
+      setGameOver(true);
+    } else {
+      setNumber(nextQuestion);
+    }
+
   }
 
   return (
